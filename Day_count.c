@@ -8,7 +8,7 @@ int uru(int year){
   if(year % 4 == 0){
     ans = 1;
   }
-  if(year % 100 == 0) && (year % 100 != 0){
+  if(year % 100 == 0 && year % 100 != 0){
     ans = 0;
   }
   return ans;
@@ -18,7 +18,7 @@ int main(void){
 
   printf("1月1日を第1日目として、日数を計算します。\n");
   printf("西暦の年数を入力してください: ");
-  scanf("%d\n", &year);
+  scanf("%d", &year);
 
   if(uru(year) == 1){
     printf("うるう年として数えます。\n");
