@@ -29,7 +29,7 @@ int main(void){
 }
 do{
   printf("9月1日=0901のように、月日を4けたで入力してください:");
-  scanf("%d", %mmdd);
+  scanf("%d", &mmdd);
   m = mmdd / 100;
   d = mmdd % 100;
 } while(m < 1 || 12 < m || d < 1 || days[m] < d); //異常があれば再入力
