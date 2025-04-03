@@ -35,7 +35,7 @@ do{
 } while(m < 1 || 12 < m || d < 1 || days[m] < d); //異常があれば再入力
 ans = 0;
   for(i = 0;i < m;i++){
-    ans = ans + d[i];
+    ans = ans + days[i];
   }
   ans = ans + d;
 
